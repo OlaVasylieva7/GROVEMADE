@@ -1,0 +1,351 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+
+/* section header */
+
+.header {
+    width: 100%;
+    padding: 25px 38px;
+    position: relative;
+}
+
+.header-nav {
+    width: 100%;
+}
+
+.header-nav-list {
+    width: 100%;
+    display: flex;
+}
+
+.header-nav-list li {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin: 0 12px;
+}
+
+.header-nav-list .my-cart {
+    margin-left: auto;
+}
+
+.logo {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%,-50%);
+}
+
+
+
+/* section main */
+
+section {
+    width: 100%;
+}
+
+section h1, section h2, section h3 {
+    font-size: 43px;
+    line-height: 46px;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 400;
+}
+
+section p {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section button {
+    background: none;
+    border: none;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*  */
+.section-system {
+    height: 504px;
+    background-image: url("../img/desk.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.section-system h1 {
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.section-system p{
+    color: #fff;
+    margin-bottom: 28px;
+}
+
+.section-system button {
+    color: #fff;
+}
+
+.section-design {
+    height: 312px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-design h2 {
+    margin-bottom: 24px;
+}
+
+.section-design p {
+    margin-bottom: 26px;
+    color: #A0A0A0;
+}
+
+.section-cards {
+    height: 570px;
+    display: flex;
+    padding: 0 44px;
+}
+
+.card-large {
+    padding: 0 6px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-large h3 {
+    font-size: 27px;
+    margin-top: 52px;
+    margin-bottom: 22px;
+}
+
+
+/* Featured Products */
+
+
+/* Home Office Inspiration */
+
+.section-office {
+    background-image: url("../img/second\ logo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 504px;
+    color: #fff
+}
+
+.section-office h2 {
+    font-size: 66px;
+    line-height: 70px;
+    margin-bottom: 14px;
+}
+
+.section-office button {
+    margin-top: 30px;
+    color: #fff
+}
+
+.section-products h2 {
+    font-size: 33px;
+    margin-bottom: 16px;
+}
+
+.section-products {
+    margin-bottom: 100px;
+}
+
+.section-products > p {
+    color: #A0A0A0;
+    margin-bottom: 80px;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product-card {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0.7px;
+    color: #A0A0A0;
+}
+
+.product-name, .product-price {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.product-card img {
+    margin-bottom: 22px;
+}
+
+.section-way {
+    margin-top: 120px;
+}
+.section-way h2, .section-work h2 {
+    font-size: 34px;
+    line-height: 36px;
+}
+
+.section-way p, .section-work p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #A0A0A0;
+    width: 777px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+.section-way img {
+    margin: 0 auto;
+}
+
+.section-work {
+    margin-top: 42px;
+    padding: 0 38px;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(6,170px);
+    gap: 25px;
+    margin: 0 auto;
+}
+
+.photos img {
+    display: flex;
+    width: 100%;
+}
+
+.section-join {
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-join h2 {
+    font-size: 34px;
+    line-height: 36px;
+    margin-bottom: 44px;
+}
+
+.section-join button {
+    line-height: 21px;
+}
+
+.section-inspires {
+    height: 404px;
+    margin: 0 50;
+    background-color:#9AA8B1;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    color: #fff;
+}
+
+.section-inspires svg {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-inspires h2 {
+    margin: 24px auto;
+    line-height: 58px;
+}
+
+/* footer */
+
+.footer {
+    margin-top: 40px;
+    background-color: #F9F9F9;
+    display: flex;
+    padding: 82px 50px;
+    position: relative;
+}
+
+.footer ul li {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.footer .info {
+    width: 348px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: #A0A0A0;
+}
+
+.info-title {
+    font-size: 22px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.go-up {
+    background-color: #000000;
+    color:#fff;
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    
+}
