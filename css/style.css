@@ -99,7 +99,7 @@ img {
 
 /* section main */
 
-/* section {
+.section {
     width: 100%;
 }
 
@@ -113,7 +113,8 @@ section h1, section h2, section h3 {
     font-weight: 400;
 }
 
-section p {
+
+.section p {
     font-size: 15px;
     line-height: 18px;
     text-align: center;
@@ -122,6 +123,7 @@ section p {
     margin-right: auto;
     margin-left: auto;
 }
+
 
 section button {
     background: none;
@@ -134,10 +136,10 @@ section button {
     display: block;
     margin-right: auto;
     margin-left: auto;
-} */
+} 
 
 
-/*  */
+/* hero */
 .section-system {
     height: 504px;
     background-image: url("../img/desk.png");
@@ -228,16 +230,29 @@ section button {
     color: #fff
 }
 
-.section-products h2 {
-    font-size: 33px;
-    margin-bottom: 16px;
-}
+/* section products */
 
-.section-products {
+
+.product-section {
     margin-bottom: 100px;
 }
+.product-title {
+    font-size: 33px;
+    margin-bottom: 16px;
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+}
 
-.section-products > p {
+.product-text {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    color: #A0A0A0;
+}
+
+.product-section > p {
     color: #A0A0A0;
     margin-bottom: 80px;
 }
@@ -284,6 +299,7 @@ section button {
     width: 777px;
     margin-top: 23px;
     margin-bottom: 23px;
+    text-align: center;
 }
 
 .section-way img {
