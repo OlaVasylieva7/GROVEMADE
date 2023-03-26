@@ -21,15 +21,19 @@
     <!-- section header -->
     <header class="header">
       <div class="container">
-      <nav class="header-nav">
-        <ul class="header-nav-list">
-          <li class="header-nav-item"><a class="header-nav-link" href="/">Shop</a></li>
-          <li class="header-nav-item"><a class="header-nav-link" href="/">Explore</a></li>
-        </ul>
-        <a><img src="./img/logo.svg" alt=""></a>
-        <a class="header-nav-link" href="/">My Cart</a>
-      </nav>
-    </div>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="/">Shop</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="/">Explore</a>
+            </li>
+          </ul>
+          <a><img src="./img/logo.svg" alt="" /></a>
+          <a class="header-nav-link" href="/">My Cart</a>
+        </nav>
+      </div>
     </header>
     <!-- section main -->
     <main>
@@ -39,108 +43,150 @@
         <p class="hero-name">Available in Walnut or Maple</p>
         <a class="hero-link" href="/">LEARN MORE</a>
       </section>
+
       <!-- design -->
-      <section class="section-design">
-        <h2>Design Inspires</h2>
-        <p>Build your dream workspace, so you can get your best work done.</p>
-        <button type="button"><a href="/">GET STARTED</a></button>
+      <section class="design-section">
+        <h2 class="design-title">Design Inspires</h2>
+        <p class="design-name">
+          Build your dream workspace, so you can get your best work done.
+        </p>
+        <a class="design-link" href="/">GET STARTED</a>
       </section>
       <section class="section-cards">
         <div class="card-large">
-          <img src="./img/2.jpg" alt="computers" />
-          <h3>Desk Pads</h3>
-          <button type="button"><a href="/">LEARN MORE</a></button>
+          <img class="card-large-img" src="./img/2.jpg" alt="computers" />
+          <h3 class="card-large-h3">Desk Pads</h3>
+          <button class="card-large-button" type="button">
+            <a href="/">LEARN MORE</a>
+          </button>
         </div>
         <div class="card-large">
-          <img src="./img/1.jpg" alt="apple devices" />
-          <h3>Laptop Stands</h3>
-          <button type="button"><a href="/">LEARN MORE</a></button>
+          <img class="card-large-img" src="./img/1.jpg" alt="apple devices" />
+          <h3 class="card-large-h3">Laptop Stands</h3>
+          <button class="card-large-button" type="button">
+            <a href="/">LEARN MORE</a>
+          </button>
         </div>
       </section>
-      <section class="section-products">
-        <h2>Featured Products</h2>
-        <p>See What’s Trending Right Now</p>
-        <div class="slider">
-          <div class="product-card">
-            <img src="./img/3.jpg" alt="phone" />
-            <p class="product-name">Walnut MagSafe Stand</p>
-            <p class="product-price">$120</p>
+
+      <!-- section products -->
+      <div class="container">
+        <section class="product-section">
+          <h2 class="product-title">Featured Products</h2>
+          <p class="product-text">See What’s Trending Right Now</p>
+          <div class="slider">
+            <div class="product-card">
+              <img class="product-card-img" src="./img/3.jpg" alt="phone" />
+              <p class="product-name">Walnut MagSafe Stand</p>
+              <p class="product-price">$120</p>
+            </div>
+            <div class="product-card">
+              <img class="product-card-img" src="./img/4.jpg" alt="laptop" />
+              <p class="product-name">Walnut Laptop Riser</p>
+              <p class="product-price">$150</p>
+            </div>
+            <div class="product-card">
+              <img class="product-card-img" src="./img/5.jpg" alt="tablet" />
+              <p class="product-name">Walnut iPad Stand</p>
+              <p class="product-price">$80</p>
+            </div>
+            <div class="product-card">
+              <img class="product-card-img" src="./img/6.jpg" alt="computer" />
+              <p class="product-name">Walnut Monitor Stand</p>
+              <p class="product-price">$100</p>
+            </div>
           </div>
-          <div class="product-card">
-            <img src="./img/4.jpg" alt="laptop" />
-            <p class="product-name">Walnut Laptop Riser</p>
-            <p class="product-price">$150</p>
-          </div>
-          <div class="product-card">
-            <img src="./img/5.jpg" alt="tablet" />
-            <p class="product-name">Walnut iPad Stand</p>
-            <p class="product-price">$80</p>
-          </div>
-          <div class="product-card">
-            <img src="./img/6.jpg" alt="computer" />
-            <p class="product-name">Walnut Monitor Stand</p>
-            <p class="product-price">$100</p>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
+
+      <!-- hero-inspiration section -->
       <section class="section-office">
-        <h2>Home Office Inspiration</h2>
-        <p>
+        <h2 class="section-office-title">Home Office Inspiration</h2>
+        <p class="section-office-text">
           Working from home can be a challenge—see some creative solutions to
           get it just right.
         </p>
-        <button type="button"><a href="/">LEARN MORE</a></button>
+        <button class="section-office-link" type="button">
+          <a href="/">LEARN MORE</a>
+        </button>
       </section>
+
+      <!-- way -->
       <section class="section-way">
-        <h2>Made The Hard Way</h2>
-        <p>
+        <h2 class="section-way-title">Made The Hard Way</h2>
+        <p class="section-way-text">
           Our signature craftsmanship has been honed over a decade of
           manufacturing innovation here in Portland, Oregon. We combine the
           skills of our small in-house team with the collective strength of
           collaborators throughout the US to deliver quality products worth
           investing in.
         </p>
-        <img src="./img/7.jpg" alt="old building" />
+        <img class="section-way-img" src="./img/7.jpg" alt="old building" />
       </section>
+
+      <!-- work -->
       <section class="section-work">
-        <h2>Make Work Meaningful</h2>
-        <p>
+        <h2 class="section-work-title">Make Work Meaningful</h2>
+        <p class="section-work-text">
           We're here because we believe that your work deserves the best. A team
           that loves working together is the magic that makes it all happen.
         </p>
         <div class="photos">
-          <img src="./img/8.jpg" alt="man who loves music" />
-          <img src="./img/9.jpg" alt="man who is laughing" />
-          <img src="./img/10.jpg" alt="man with portret" />
-          <img src="./img/11.jpg" alt="man in work" />
-          <img src="./img/12.jpg" alt="man with a dog" />
-          <img src="./img/13.jpg" alt="familly" />
-          <img src="./img/14.jpg" alt="girl who is advertising a product" />
-          <img src="./img/15.jpg" alt="superman" />
-          <img src="./img/16.jpg" alt="magic" />
-          <img src="./img/17.jpg" alt="handmade" />
-          <img src="./img/18.jpg" alt="handshake" />
-          <img src="./img/19.jpg" alt="woman with the wood" />
-          <img src="./img/20.jpg" alt="happy human with a dog" />
-          <img src="./img/21.jpg" alt="girl who is looking at the flowers" />
-          <img src="./img/22.jpg" alt="father with daughters" />
-          <img src="./img/23.jpg" alt="focused woman" />
-          <img src="./img/24.jpg" alt="strong girl" />
-          <img src="./img/25.jpg" alt="snowman" />
-          <img src="./img/26.jpg" alt="suspicious woman" />
-          <img src="./img/27.jpg" alt="flower" />
-          <img src="./img/28.jpg" alt="human" />
-          <img src="./img/29.jpg" alt="man who doesn't like flowers" />
-          <img src="./img/30.jpg" alt="collection of trainding cards" />
-          <img src="./img/31.jpg" alt="smiling girl" />
+          <img class="photo" src="./img/8.jpg" alt="man who loves music" />
+          <img class="photo" src="./img/9.jpg" alt="man who is laughing" />
+          <img class="photo" src="./img/10.jpg" alt="man with portret" />
+          <img class="photo" src="./img/11.jpg" alt="man in work" />
+          <img class="photo" src="./img/12.jpg" alt="man with a dog" />
+          <img class="photo" src="./img/13.jpg" alt="familly" />
+          <img
+            class="photo"
+            src="./img/14.jpg"
+            alt="girl who is advertising a product"
+          />
+          <img class="photo" src="./img/15.jpg" alt="superman" />
+          <img class="photo" src="./img/16.jpg" alt="magic" />
+          <img class="photo" src="./img/17.jpg" alt="handmade" />
+          <img class="photo" src="./img/18.jpg" alt="handshake" />
+          <img class="photo" src="./img/19.jpg" alt="woman with the wood" />
+          <img class="photo" src="./img/20.jpg" alt="happy human with a dog" />
+          <img
+            class="photo"
+            src="./img/21.jpg"
+            alt="girl who is looking at the flowers"
+          />
+          <img class="photo" src="./img/22.jpg" alt="father with daughters" />
+          <img class="photo" src="./img/23.jpg" alt="focused woman" />
+          <img class="photo" src="./img/24.jpg" alt="strong girl" />
+          <img class="photo" src="./img/25.jpg" alt="snowman" />
+          <img class="photo" src="./img/26.jpg" alt="suspicious woman" />
+          <img class="photo" src="./img/27.jpg" alt="flower" />
+          <img class="photo" src="./img/28.jpg" alt="human" />
+          <img
+            class="photo"
+            src="./img/29.jpg"
+            alt="man who doesn't like flowers"
+          />
+          <img
+            class="photo"
+            src="./img/30.jpg"
+            alt="collection of trainding cards"
+          />
+          <img class="photo" src="./img/31.jpg" alt="smiling girl" />
         </div>
       </section>
+
+      <!-- join -->
       <section class="section-join">
-        <h2>We Hope You'll Join Us</h2>
-        <button type="button"><a>READ MORE ABOUT OUR STORY</a></button>
+        <h2 class="section-join-title">We Hope You'll Join Us</h2>
+        <button class="section-join-link" type="button">
+          <a href="/">READ MORE ABOUT OUR STORY</a>
+        </button>
       </section>
+
+      <!-- desihn-inspire -->
       <section class="section-inspires">
         <svg
+          class="section-inspires-logo"
           width="40"
           height="34"
           viewBox="0 0 40 34"
@@ -169,22 +215,23 @@
             />
           </defs>
         </svg>
-        <h2>Design Inspires</h2>
-        <p>Build your dream workspace, so you can get your best work done.</p>
+        <h2 class="section-inspires-title">Design Inspires</h2>
+        <p class="section-inspires-text">Build your dream workspace, so you can get your best work done.</p>
       </section>
     </main>
+
     <!-- section footer -->
     <footer class="footer">
-      <ul>
-        <li><a href="/">Shop</a></li>
-        <li><a href="/">About</a></li>
-        <li><a href="/">Journal</a></li>
-        <li><a href="/">Support</a></li>
-        <li><a href="/">COVID-19 Info</a></li>
-        <li><a href="/">Order Status</a></li>
-        <li><a href="/">Corporate Sales</a></li>
+      <ul class="footer-links">
+        <li class="footer-link"><a href="/">Shop</a></li>
+        <li class="footer-link"><a href="/">About</a></li>
+        <li class="footer-link"><a href="/">Journal</a></li>
+        <li class="footer-link"><a href="/">Support</a></li>
+        <li class="footer-link"><a href="/">COVID-19 Info</a></li>
+        <li class="footer-link"><a href="/">Order Status</a></li>
+        <li class="footer-link"><a href="/">Corporate Sales</a></li>
       </ul>
-      <div class="info">
+      <div class="footer-info">
         <p class="info-title">Newsletter Signup</p>
         <p>
           Sign up to our Newsletter to hear about new product releases, learn
@@ -192,7 +239,9 @@
           scenes at Grovemade.
         </p>
       </div>
-      <button class="go-up" type="button"><a>GO<br/>UP</a></button>
+      <button class="go-up" type="button">
+        <a>GO<br />UP</a>
+      </button>
     </footer>
   </body>
 </html>

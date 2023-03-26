@@ -23,8 +23,12 @@ img {
     display: block;
 }
 
+button {
+    padding: 0;
+}
+
 .container {
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
     padding: 25px 38px;
 }
@@ -62,7 +66,7 @@ img {
     margin: 0 auto;
 
     background-color: #A0A0A0;
-    background-image: url(../img/desk.png);
+    background-image: url("../img/desk.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -75,6 +79,7 @@ img {
 }
 
 .hero-title {
+    font-weight: 400;
     font-size: 43px;
     line-height: 46px;
     color: #FFFFFF;
@@ -102,8 +107,14 @@ img {
 .section {
     width: 100%;
 }
-
-section h1, section h2, section h3 {
+.design-section {
+    height: 312px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.design-title {
     font-size: 43px;
     line-height: 46px;
     text-align: center;
@@ -112,9 +123,7 @@ section h1, section h2, section h3 {
     margin-left: auto;
     font-weight: 400;
 }
-
-
-.section p {
+.design-name {
     font-size: 15px;
     line-height: 18px;
     text-align: center;
@@ -122,10 +131,11 @@ section h1, section h2, section h3 {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 23px;
+    margin-bottom: 26px;
+    color: #A0A0A0;
 }
-
-
-section button {
+.design-link {
     background: none;
     border: none;
     font-size: 13px;
@@ -136,7 +146,94 @@ section button {
     display: block;
     margin-right: auto;
     margin-left: auto;
-} 
+}
+
+.card-large {
+    padding: 0 6px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-large-h3 {
+    font-weight: 400;
+    font-size: 27px;
+    margin-top: 52px;
+    margin-bottom: 22px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-large-button {
+    background: none;
+    border: none;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/* section products */
+
+.product-section {
+    margin-bottom: 100px;
+}
+.product-title {
+    font-size: 33px;
+    margin-bottom: 16px;
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+}
+
+.product-text {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    color: #A0A0A0;
+    margin-bottom: 80px;
+}
+
+/* section h1, section h2, section h3 {
+    font-size: 43px;
+    line-height: 46px;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 400;
+} */
+
+
+/* .section p {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+} */
+
+
+/* section button {
+    background: none;
+    border: none;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}  */
 
 
 /* hero */
@@ -188,75 +285,6 @@ section button {
     padding: 0 44px;
 }
 
-.card-large {
-    padding: 0 6px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-large h3 {
-    font-size: 27px;
-    margin-top: 52px;
-    margin-bottom: 22px;
-}
-
-
-/* Featured Products */
-
-
-/* Home Office Inspiration */
-
-.section-office {
-    background-image: url("../img/second\ logo.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 504px;
-    color: #fff
-}
-
-.section-office h2 {
-    font-size: 66px;
-    line-height: 70px;
-    margin-bottom: 14px;
-}
-
-.section-office button {
-    margin-top: 30px;
-    color: #fff
-}
-
-/* section products */
-
-
-.product-section {
-    margin-bottom: 100px;
-}
-.product-title {
-    font-size: 33px;
-    margin-bottom: 16px;
-    color: #000000;
-    font-weight: 400;
-    text-align: center;
-}
-
-.product-text {
-    font-size: 15px;
-    line-height: 18px;
-    text-align: center;
-    letter-spacing: 0.8px;
-    color: #A0A0A0;
-}
-
-.product-section > p {
-    color: #A0A0A0;
-    margin-bottom: 80px;
-}
-
 .slider {
     width: 100%;
     display: flex;
@@ -280,19 +308,85 @@ section button {
     margin-bottom: 0;
 }
 
-.product-card img {
+.product-card-img {
     margin-bottom: 22px;
+}
+
+
+/* Home Office Inspiration */
+
+.section-office {
+    background-image: url("../img/second\ logo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 504px;
+    color: #fff
+}
+
+.section-office-title {
+    font-size: 66px;
+    line-height: 70px;
+    margin-bottom: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+}
+
+.section-office-text {
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+.section-office-link {
+    color: #fff;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    display: block;
 }
 
 .section-way {
     margin-top: 120px;
-}
-.section-way h2, .section-work h2 {
-    font-size: 34px;
-    line-height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.section-way p, .section-work p {
+.section-work {
+    margin-top: 42px;
+    padding: 0 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section-way-title, .section-work-title {
+    font-size: 34px;
+    line-height: 36px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 400;
+}
+
+.section-way-text, .section-work-text{
     font-size: 16px;
     line-height: 24px;
     color: #A0A0A0;
@@ -300,15 +394,12 @@ section button {
     margin-top: 23px;
     margin-bottom: 23px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.section-way img {
+.section-way-img {
     margin: 0 auto;
-}
-
-.section-work {
-    margin-top: 42px;
-    padding: 0 38px;
 }
 
 .photos {
@@ -318,7 +409,7 @@ section button {
     margin: 0 auto;
 }
 
-.photos img {
+.photo {
     display: flex;
     width: 100%;
 }
@@ -328,16 +419,29 @@ section button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.section-join h2 {
+.section-join-title {
     font-size: 34px;
     line-height: 36px;
     margin-bottom: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
 }
 
-.section-join button {
+.section-join-link {
     line-height: 21px;
+    background: none;
+    border: none;
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #000000;
 }
 
 .section-inspires {
@@ -350,14 +454,19 @@ section button {
     color: #fff;
 }
 
-.section-inspires svg {
+.section-inspires-logo {
     margin-left: auto;
     margin-right: auto;
 }
 
-.section-inspires h2 {
+.section-inspires-title {
     margin: 24px auto;
     line-height: 58px;
+}
+
+.section-inspires-text {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* footer */
@@ -370,17 +479,19 @@ section button {
     position: relative;
 }
 
-.footer ul li {
+.footer-link {
     font-size: 22px;
     margin-bottom: 16px;
 }
 
-.footer .info {
+.footer-info {
     width: 348px;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.8px;
     color: #A0A0A0;
+    height: 200px;
+    border-bottom: 1px solid #000000;
 }
 
 .info-title {
